@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>{{.title}}</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name="keywords" content="{{.keywords}}">
+    <meta name="description" content="{{.description}}">
+    <link rel="stylesheet" type="text/css" media="all" href="/static/themes/zipe/css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/static/themes/zipe/css/custom.css">
+    <link rel="shortcut icon" href="http://www.wolaiyang.com/favicon.ico">
+    <link rel="stylesheet" id="wp-pagenavi-css" href="/static/themes/zipe/css/pagenavi-css.css" type="text/css" media="all">
+    <script type="text/javascript" src="/static/themes/zipe/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/themes/zipe/js/jquery-migrate.min.js"></script>
+	  <style type="text/css">
+      .recentcomments a {
+        display:inline !important;
+        padding:0 !important;
+        margin:0 !important;
+      }
+  </style>
+  </head>
+
+  <body class="single single-post postid-292 single-format-standard">
+    <header id="branding" role="banner">
+			<hgroup id="logo">
+      <h4 id="site-title"><a href="/" title="{{.options.sitename}}" rel="home">{{.options.sitename}}</a></h4>
+      <h5 id="site-description">{{.options.subtitle}}</h5>
+	    </hgroup>
+  	  <nav id="access" role="navigation">
+		    <ul id="menu-" class="topmenu">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="/">首页</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="/about">关于</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="/archives">Archives</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="/links">链接</a>
+          </li>
+        </ul>
+      </nav><!-- #access -->
+		  <a id="rss" href="http://www.wolaiyang.com/?feed=rss2">RSS订阅<i title="RSS订阅"></i></a>
+    </header><!-- #branding -->
+    <div class="split"></div>
+    <section id="main">
+	    <div id="content" role="main">
+        {{.LayoutContent}}
+      </div><!-- #content -->
+
+      <div id="sidebar" class="widget-area" role="complementary">
+        <aside id="search-3" class="widget clearfix widget_search">
+          <h3 class="widget-title">站内搜养</h3>
+          <form method="get" id="searchform" action="/search">
+	          <input type="text" name="s" id="s" placeholder="搜索..." required="">
+	          <input type="submit" name="submit" id="searchsubmit" value="搜索">
+          </form>
+        </aside>
+        <aside class="widget clearfix widget_tag_cloud">
+          <h3 class="widget-title">大家都在搜</h3>
+          <div class="tagcloud">
+            <a href="#" style="font-size: 8pt;">两性智慧</a>
+            <a href="#" style="font-size: 8pt;">调查</a>
+          </div>
+        </aside>
+        <aside class="widget clearfix widget_categories">
+          <h3 class="widget-title">文章归类</h3>
+          <ul>
+        	  <li class="cat-item"><a href="#">两性书籍</a> (18)</li>
+        	</ul>
+        </aside>
+        <aside class="widget clearfix widget_recent_comments">
+          <h3 class="widget-title">近期评论</h3>
+          <ul id="recentcomments">
+            <li class="recentcomments">
+              <a href="#" rel="external nofollow" class="url">Who?</a>发表在《<a href="#">饭后不能急于做的6件事</a>》</li>
+          </ul>
+        </aside>
+      </div><!-- #sidebar .widget-area -->
+    </section><!-- #main -->
+
+    <footer id="colophon" role="contentinfo">
+      Copyright &copy; 2013-2014
+      <a href="{{.options.siteurl}}" rel="home">{{.options.sitename}}</a>
+      <span class="sep"></span>
+      <a target="_blank" href="#" style="text-decoration:none;">联系我们</a>
+      <span class="sep"></span>
+      本站内容均来自互联网，如有侵权请与我们联系。
+    </footer><!-- #colophon -->
+    <div id="sticky-nav">
+	    <a href="#top" class="gotop" onclick="window.scrollTo(0,0);return false;"><span>返回顶部</span></a>
+		  <a href="#respond" class="gocom" onclick="document.getElementById('comment').focus();return false;"><span>发表评论</span></a>
+		  <a href="#colophon" class="gobtm" onclick="window.scrollTo(0,document.body.scrollHeight);return false;"><span>前往底部</span></a>
+    </div>
+	  <div style="display:none">
+	    {{str2html .options.stat}}
+	  </div>
+  </body>
+</html>

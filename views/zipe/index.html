@@ -1,0 +1,20 @@
+{{range $k, $v := .list}}
+  <article class="post type-post status-publish format-standard hentry">
+    <header class="entry-header">
+      <h1 class="entry-title">
+        <a href="{{$v.Link}}" rel="bookmark">{{str2html $v.ColorTitle}}</a>
+      </h1>
+      <div class="entry-meta">
+        <time class="entry-date" datetime="{{$v.Posttime}}" pubdate>{{date $v.Posttime "M j"}}<span>th</span>, {{date $v.Posttime "Y"}}</time> /
+        {{str2html $v.TagsLink}}
+      </div><!-- .entry-meta -->
+    </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      {{str2html $v.Excerpt}}
+    </div>
+  </article>
+{{end}}
+<nav id="pagenavi">
+	{{str2html .pagebar}}
+</nav>
