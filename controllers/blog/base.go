@@ -22,6 +22,11 @@ func (this *baseController) Prepare() {
 	this.actionName = strings.ToLower(actionName)
 	this.options = models.GetOptions()
 	this.Data["options"] = this.options
+
+	var tagslist []*models.Tag
+	var tag models.Tag
+	tag.Query().OrderBy("-count").Limit(20, 0).All(&tagslist)
+	this.Data["tagslist"] = tagslist
 }
 
 func (this *baseController) display(tpl string) {

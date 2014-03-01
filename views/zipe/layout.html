@@ -63,8 +63,9 @@
         <aside class="widget clearfix widget_tag_cloud">
           <h3 class="widget-title">大家都在搜</h3>
           <div class="tagcloud">
-            <a href="#" style="font-size: 8pt;">两性智慧</a>
-            <a href="#" style="font-size: 8pt;">调查</a>
+            {{range $k, $v := .tagslist}}
+            {{str2html $v.Link}}
+            {{end}}
           </div>
         </aside>
         <aside class="widget clearfix widget_categories">
