@@ -66,6 +66,7 @@ func (this *MainController) Show() {
 	post.Content = strings.Replace(post.Content, "_ueditor_page_break_tag_", "", -1)
 
 	this.Data["post"] = post
+	this.Data["tagslink"] = post.TagsLink()
 	this.setHeadMetas(post.Title, strings.Trim(post.Tags, ","), post.Title)
 	this.display("article")
 }
