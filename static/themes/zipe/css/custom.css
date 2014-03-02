@@ -1,1 +1,9 @@
 aside.widget_categories li{width:95px;float:left}aside ul.blogroll li{width:95px;float:left}
+
+#pagenavi ul {
+  list-style: none;
+}
+
+#pagenavi ul li {
+  display: inline-block;
+}
