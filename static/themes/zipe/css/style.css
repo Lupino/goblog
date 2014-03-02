@@ -63,7 +63,6 @@ body{background:#f7f7f7 url(images/bg.png) repeat-x; background:-webkit-linear-g
 .none{display:none}
 .clearfix:after{visibility:hidden; display:block; font-size:0; content:""; clear:both; height:0}
 .clearfix{zoom:1}
-.wp-smiley{vertical-align:middle}
 .ad220{margin-top:10px; text-align:center}
 .ads,.adi,.adt{margin-bottom:20px; text-align:center; clear:both; width:720px; overflow:hidden}
 .adt{margin-bottom:14px; width:700px}
@@ -167,11 +166,6 @@ aside li a:hover{text-decoration:none}
 .widget_wkc_recent_comments li{background:none; padding-left:0}
 .widget_wkc_recent_comments li a{display:inline}
 .widget_wkc_recent_comments img{vertical-align:middle; margin-right:4px}
-#wp-calendar{color:#555; width:100%; text-align:center}
-#wp-calendar caption, #wp-calendar td, #wp-calendar th{text-align:center}
-#wp-calendar caption{font-size:11px; font-weight:500; padding:5px 0 3px 0; text-transform:uppercase}
-#wp-calendar th{background:#f4f4f4; border-top:1px dotted #ccc; border-bottom:1px dotted #ccc; font-weight:bold}
-#wp-calendar tfoot td{background:#f4f4f4; border-top:1px dotted #ccc; border-bottom:1px dotted #ccc}
 /*
 ============================== Comments
 */
@@ -318,21 +312,6 @@ aside li a:hover{text-decoration:none}
 ============================== Plugin
 */
 #comment_mail_notify{margin:10px 5px 0 0; +margin-top:7px}
-/* WP-PageNavi */
-.wp-pagenavi{text-align:center}
-.wp-pagenavi span, .wp-pagenavi a{height:24px; line-height:24px; color:#333; padding:0 8px; display:inline-block; margin:0 2px}
-.wp-pagenavi a:hover{color:#000}
-.wp-pagenavi .current{color:#000; border:1px solid #ccc; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; -webkit-box-shadow:inset 0 0 0 1px #fff,0 1px 2px #ddd; -moz-box-shadow:inset 0 0 0 1px #fff,0 1px 2px #ddd; box-shadow:inset 0 0 0 1px #fff,0 1px 2px #ddd}
-/* WP-Syntax */
-.wp_syntax{margin:0 0 1em !important; border-color:#EEE !important}
-.wp_syntax pre{padding:0; background:none; font-family:Consolas,Courier,monospace !important}
-.wp_syntax span{font-family:Consolas,Courier,monospace !important}
-.wp_syntax table{border:none 0; margin:0}
-.wp_syntax table td{border-top:none; padding:4px 6px}
-.wp_syntax table td.line_numbers{background:none; border-right:3px solid skyblue; width:24px}
-/*
-============================== Other
-*/
 /* Slides Show */
 #slideshow {position:relative;margin-bottom:20px}
 #slideshow ul{list-style:none}
